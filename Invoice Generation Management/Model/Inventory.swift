@@ -12,4 +12,5 @@ import RealmSwift
 class Inventory: Object {
     @objc dynamic var name: String = ""
     @objc dynamic var qty: Int = 0
+    @objc dynamic var price: Int = 0
 }

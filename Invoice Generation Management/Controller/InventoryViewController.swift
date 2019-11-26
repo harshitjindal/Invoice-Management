@@ -41,8 +41,9 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
     @IBAction func addInventoryItem(_ sender: Any) {
         var itemNameTextField = UITextField()
         var itemQtyTextField = UITextField()
+        var itemPriceTextField = UITextField()
         
-        let alert = UIAlertController(title: "Add Inventory Item", message: "Please Enter Item Name and Quantity", preferredStyle: .alert)
+        let alert = UIAlertController(title: "Add Inventory Item", message: "Please Enter Item Details", preferredStyle: .alert)
         
         alert.addTextField { (alertTextField) in
             alertTextField.placeholder = "Inventory Item"
@@ -54,11 +55,17 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
             itemQtyTextField = alertTextField
         }
         
+        alert.addTextField { (alertTextField) in
+            alertTextField.placeholder = "Inventory Price"
+            itemPriceTextField = alertTextField
+        }
+        
         let addAction = UIAlertAction(title: "Done", style: .default) { (addAction) in
             let item = Inventory()
             if let textInTextfield = itemNameTextField.text {
                 item.name = itemNameTextField.text!
                 item.qty = Int(itemQtyTextField.text!) ?? 0
+                item.price = Int(itemPriceTextField.text!) ?? 0
             }
             self.save(inventoryItem: item)
         }
