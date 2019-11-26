@@ -35,7 +35,7 @@
                                 <rect key="frame" x="0.0" y="120" width="414" height="693"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
                                 <prototypes>
-                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="inventoryCell" rowHeight="70" id="0nB-mu-VTe">
+                                    <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" selectionStyle="blue" hidesAccessoryWhenEditing="NO" indentationLevel="1" indentationWidth="0.0" reuseIdentifier="inventoryCell" rowHeight="70" id="0nB-mu-VTe" customClass="InventoryTableViewCell" customModule="Invoice_Generation_Management" customModuleProvider="target">
                                         <rect key="frame" x="0.0" y="28" width="414" height="70"/>
                                         <autoresizingMask key="autoresizingMask"/>
                                         <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="0nB-mu-VTe" id="YZg-2k-tTi">
@@ -62,6 +62,10 @@
                                                 <constraint firstItem="3Gm-rC-NU1" firstAttribute="centerY" secondItem="GHt-7A-kXM" secondAttribute="centerY" id="wPL-do-6QM"/>
                                             </constraints>
                                         </tableViewCellContentView>
+                                        <connections>
+                                            <outlet property="inventoryItemOutlet" destination="GHt-7A-kXM" id="hUJ-us-nUB"/>
+                                            <outlet property="inventoryItemQty" destination="3Gm-rC-NU1" id="7xO-s6-lGw"/>
+                                        </connections>
                                     </tableViewCell>
                                 </prototypes>
                                 <connections>

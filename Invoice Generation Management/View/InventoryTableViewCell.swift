@@ -20,5 +20,13 @@ class InventoryTableViewCell: UITableViewCell {
 
         // Configure the view for the selected state
     }
+    
+    func updateCell(name: String = "", qty: Int = 0) {
+        inventoryItemOutlet.text = name
+        inventoryItemQty.text = String(qty)
+    }
 
+    @IBOutlet weak var inventoryItemOutlet: UILabel!
+    @IBOutlet weak var inventoryItemQty: UILabel!
+    
 }

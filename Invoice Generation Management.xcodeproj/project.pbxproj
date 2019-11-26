@@ -15,6 +15,8 @@
 		B30CDB0D238BA754000FEB45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30CDB0B238BA754000FEB45 /* LaunchScreen.storyboard */; };
 		B3FE6BBC238D8055000DE563 /* RealmSwift in Frameworks */ = {isa = PBXBuildFile; productRef = B3FE6BBB238D8055000DE563 /* RealmSwift */; };
 		B3FE6BBE238D8055000DE563 /* Realm in Frameworks */ = {isa = PBXBuildFile; productRef = B3FE6BBD238D8055000DE563 /* Realm */; };
+		B3FE6BC2238D8919000DE563 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE6BC1238D8919000DE563 /* Inventory.swift */; };
+		B3FE6BC5238D8AA9000DE563 /* InventoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE6BC4238D8AA9000DE563 /* InventoryTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -26,6 +28,8 @@
 		B30CDB09238BA754000FEB45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B30CDB0C238BA754000FEB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		B30CDB0E238BA754000FEB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		B3FE6BC1238D8919000DE563 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
+		B3FE6BC4238D8AA9000DE563 /* InventoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,9 +64,11 @@
 		B30CDAFF238BA750000FEB45 /* Invoice Generation Management */ = {
 			isa = PBXGroup;
 			children = (
+				B3FE6BC0238D88EA000DE563 /* Model */,
+				B3FE6BC3238D8A82000DE563 /* View */,
+				B3FE6BBF238D8735000DE563 /* Controller */,
 				B30CDB00238BA750000FEB45 /* AppDelegate.swift */,
 				B30CDB02238BA750000FEB45 /* SceneDelegate.swift */,
-				B3FE6BBF238D8735000DE563 /* Controller */,
 				B30CDB06238BA750000FEB45 /* Main.storyboard */,
 				B30CDB09238BA754000FEB45 /* Assets.xcassets */,
 				B30CDB0B238BA754000FEB45 /* LaunchScreen.storyboard */,
@@ -77,6 +83,22 @@
 				B30CDB04238BA750000FEB45 /* InventoryViewController.swift */,
 			);
 			path = Controller;
+			sourceTree = "<group>";
+		};
+		B3FE6BC0238D88EA000DE563 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				B3FE6BC1238D8919000DE563 /* Inventory.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		B3FE6BC3238D8A82000DE563 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				B3FE6BC4238D8AA9000DE563 /* InventoryTableViewCell.swift */,
+			);
+			path = View;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -157,7 +179,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B3FE6BC2238D8919000DE563 /* Inventory.swift in Sources */,
 				B30CDB05238BA750000FEB45 /* InventoryViewController.swift in Sources */,
+				B3FE6BC5238D8AA9000DE563 /* InventoryTableViewCell.swift in Sources */,
 				B30CDB01238BA750000FEB45 /* AppDelegate.swift in Sources */,
 				B30CDB03238BA750000FEB45 /* SceneDelegate.swift in Sources */,
 			);

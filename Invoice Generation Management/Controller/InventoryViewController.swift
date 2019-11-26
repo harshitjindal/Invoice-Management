@@ -7,15 +7,21 @@
 //
 
 import UIKit
+import RealmSwift
 
 class InventoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
+    
+    let realm = try! Realm()
+    
+    var inventory: Results<Inventory>?
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        <#code#>
+        return inventory?.count ?? 0
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        let inventoryCell = tableView.dequeueReusableCell(withIdentifier: "inventoryCell", for: indexPath)
-//        inventoryCell.textLabel?.text = categories?[indexPath.row].name ?? "No Categories Added"
+        let inventoryCell = tableView.dequeueReusableCell(withIdentifier: "inventoryCell", for: indexPath) as! InventoryTableViewCell
+        inventoryCell.updateCell(name: inventory?[indexPath.row].name ?? "", qty: inventory?[indexPath.row].qty ?? 0)
         inventoryCell.accessoryType = .disclosureIndicator
         return inventoryCell
     }
@@ -23,7 +29,7 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
+//        loadInventory()
     }
 
 
