@@ -23,7 +23,7 @@ class InventoryTableViewCell: UITableViewCell {
     
     func updateCell(name: String = "", qty: Int = 0) {
         inventoryItemOutlet.text = name
-        inventoryItemQty.text = String(qty)
+        inventoryItemQty.text = "Qty: \(String(qty))"
     }
 
     @IBOutlet weak var inventoryItemOutlet: UILabel!
