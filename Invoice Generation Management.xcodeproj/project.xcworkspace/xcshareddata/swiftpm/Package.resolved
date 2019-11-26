@@ -18,6 +18,15 @@
           "revision": "d2f6573960c84ebea3e0236047b3d976f95a5d7a",
           "version": "5.23.6"
         }
+      },
+      {
+        "package": "SwipeCellKit",
+        "repositoryURL": "https://github.com/SwipeCellKit/SwipeCellKit.git",
+        "state": {
+          "branch": null,
+          "revision": "7219cad3098637176ace311510d11467dbfb9bb0",
+          "version": "2.7.1"
+        }
       }
     ]
   },

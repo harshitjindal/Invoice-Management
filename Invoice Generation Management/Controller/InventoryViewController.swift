@@ -8,6 +8,7 @@
 
 import UIKit
 import RealmSwift
+import SwipeCellKit
 
 class InventoryViewController: UIViewController, UITableViewDataSource, UITableViewDelegate {
     
@@ -31,7 +32,7 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
         tableView.deselectRow(at: indexPath, animated: true)
     }
     
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         loadInventory()
@@ -68,7 +69,24 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
         alert.addAction(cancelAction)
         present(alert, animated: true)
     }
-
+    
+    func tableView(_ tableView: UITableView, commit editingStyle: UITableViewCell.EditingStyle, forRowAt indexPath: IndexPath) {
+        if editingStyle == .delete {
+            if let item = inventory?[indexPath.row] {
+                do {
+                    try realm.write() {
+                        realm.delete(item)
+                    }
+                } catch {
+                    print("Error Deleting Realm Object")
+                }
+            }
+        }
+        DispatchQueue.main.asyncAfter(deadline: .now() + 0.2) {
+            tableView.reloadData()
+        }
+    }
+    
     func loadInventory() {
         inventory = realm.objects(Inventory.self)
         tableView.reloadData()
