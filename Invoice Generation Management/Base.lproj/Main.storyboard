@@ -1,24 +1,83 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="13122.16" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="15505" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES" initialViewController="DOt-J5-Pcu">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="13104.12"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15510"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <scenes>
-        <!--View Controller-->
-        <scene sceneID="tne-QT-ifu">
+        <!--Records-->
+        <scene sceneID="JuC-Ik-KOH">
             <objects>
-                <viewController id="BYZ-38-t0r" customClass="ViewController" customModuleProvider="target" sceneMemberID="viewController">
-                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
-                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                <viewController id="EwQ-S6-VR6" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="ZuI-3q-Hwz">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
-                        <color key="backgroundColor" xcode11CocoaTouchSystemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
-                        <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="Gvw-ab-dWT"/>
                     </view>
+                    <tabBarItem key="tabBarItem" title="Records" image="book.fill" catalog="system" id="9lk-Kd-bat"/>
                 </viewController>
-                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="7iC-WB-uz1" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
+            <point key="canvasLocation" x="-465" y="572"/>
+        </scene>
+        <!--Inventory-->
+        <scene sceneID="crJ-7k-Zbb">
+            <objects>
+                <viewController id="kQm-nE-Ym4" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="bjO-CF-64z">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="YyI-U8-3ju"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Inventory" image="cube.box.fill" catalog="system" id="bW4-Uc-u4Z"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="kG7-zt-0Kf" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-1414" y="572"/>
+        </scene>
+        <!--Generate Invoice-->
+        <scene sceneID="vyi-n1-6QA">
+            <objects>
+                <viewController id="Gx2-aC-E3J" sceneMemberID="viewController">
+                    <view key="view" contentMode="scaleToFill" id="5tT-m1-KRo">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <viewLayoutGuide key="safeArea" id="lyo-8J-9V4"/>
+                    </view>
+                    <tabBarItem key="tabBarItem" title="Generate Invoice" image="pencil" catalog="system" id="wFr-gw-ZnI"/>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="Kuu-Xi-0MJ" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="477" y="572"/>
+        </scene>
+        <!--Tab Bar Controller-->
+        <scene sceneID="ST7-Qk-5QP">
+            <objects>
+                <tabBarController id="DOt-J5-Pcu" sceneMemberID="viewController">
+                    <tabBar key="tabBar" contentMode="scaleToFill" insetsLayoutMarginsFromSafeArea="NO" id="IoK-wD-h42">
+                        <rect key="frame" x="0.0" y="0.0" width="414" height="49"/>
+                        <autoresizingMask key="autoresizingMask"/>
+                        <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                    </tabBar>
+                    <connections>
+                        <segue destination="kQm-nE-Ym4" kind="relationship" relationship="viewControllers" id="v07-hN-SZF"/>
+                        <segue destination="EwQ-S6-VR6" kind="relationship" relationship="viewControllers" id="gTH-HX-MlH"/>
+                        <segue destination="Gx2-aC-E3J" kind="relationship" relationship="viewControllers" id="wut-KP-NfO"/>
+                    </connections>
+                </tabBarController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="iH0-3E-kyw" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="-464" y="-193"/>
         </scene>
     </scenes>
+    <resources>
+        <image name="book.fill" catalog="system" width="64" height="50"/>
+        <image name="cube.box.fill" catalog="system" width="64" height="62"/>
+        <image name="pencil" catalog="system" width="64" height="56"/>
+    </resources>
 </document>
