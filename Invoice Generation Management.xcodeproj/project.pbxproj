@@ -9,7 +9,7 @@
 /* Begin PBXBuildFile section */
 		B30CDB01238BA750000FEB45 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30CDB00238BA750000FEB45 /* AppDelegate.swift */; };
 		B30CDB03238BA750000FEB45 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30CDB02238BA750000FEB45 /* SceneDelegate.swift */; };
-		B30CDB05238BA750000FEB45 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30CDB04238BA750000FEB45 /* ViewController.swift */; };
+		B30CDB05238BA750000FEB45 /* InventoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B30CDB04238BA750000FEB45 /* InventoryViewController.swift */; };
 		B30CDB08238BA750000FEB45 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30CDB06238BA750000FEB45 /* Main.storyboard */; };
 		B30CDB0A238BA754000FEB45 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = B30CDB09238BA754000FEB45 /* Assets.xcassets */; };
 		B30CDB0D238BA754000FEB45 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = B30CDB0B238BA754000FEB45 /* LaunchScreen.storyboard */; };
@@ -21,7 +21,7 @@
 		B30CDAFD238BA750000FEB45 /* Invoice Generation Management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Invoice Generation Management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30CDB00238BA750000FEB45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B30CDB02238BA750000FEB45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		B30CDB04238BA750000FEB45 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		B30CDB04238BA750000FEB45 /* InventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
 		B30CDB07238BA750000FEB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		B30CDB09238BA754000FEB45 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		B30CDB0C238BA754000FEB45 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -62,13 +62,21 @@
 			children = (
 				B30CDB00238BA750000FEB45 /* AppDelegate.swift */,
 				B30CDB02238BA750000FEB45 /* SceneDelegate.swift */,
-				B30CDB04238BA750000FEB45 /* ViewController.swift */,
+				B3FE6BBF238D8735000DE563 /* Controller */,
 				B30CDB06238BA750000FEB45 /* Main.storyboard */,
 				B30CDB09238BA754000FEB45 /* Assets.xcassets */,
 				B30CDB0B238BA754000FEB45 /* LaunchScreen.storyboard */,
 				B30CDB0E238BA754000FEB45 /* Info.plist */,
 			);
 			path = "Invoice Generation Management";
+			sourceTree = "<group>";
+		};
+		B3FE6BBF238D8735000DE563 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				B30CDB04238BA750000FEB45 /* InventoryViewController.swift */,
+			);
+			path = Controller;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -149,7 +157,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				B30CDB05238BA750000FEB45 /* ViewController.swift in Sources */,
+				B30CDB05238BA750000FEB45 /* InventoryViewController.swift in Sources */,
 				B30CDB01238BA750000FEB45 /* AppDelegate.swift in Sources */,
 				B30CDB03238BA750000FEB45 /* SceneDelegate.swift in Sources */,
 			);
