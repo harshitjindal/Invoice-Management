@@ -21,7 +21,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		B30CDAFD238BA750000FEB45 /* Invoice Generation Management.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Invoice Generation Management.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B30CDAFD238BA750000FEB45 /* Billy.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Billy.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		B30CDB00238BA750000FEB45 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		B30CDB02238BA750000FEB45 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
 		B30CDB04238BA750000FEB45 /* InventoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryViewController.swift; sourceTree = "<group>"; };
@@ -58,7 +58,7 @@
 		B30CDAFE238BA750000FEB45 /* Products */ = {
 			isa = PBXGroup;
 			children = (
-				B30CDAFD238BA750000FEB45 /* Invoice Generation Management.app */,
+				B30CDAFD238BA750000FEB45 /* Billy.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -125,7 +125,7 @@
 				B3FE6BC7238D9BCC000DE563 /* SwipeCellKit */,
 			);
 			productName = "Invoice Generation Management";
-			productReference = B30CDAFD238BA750000FEB45 /* Invoice Generation Management.app */;
+			productReference = B30CDAFD238BA750000FEB45 /* Billy.app */;
 			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
@@ -339,7 +339,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.particleq.Invoice-Generation-Management";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Billy;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -357,7 +357,7 @@
 					"@executable_path/Frameworks",
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = "com.particleq.Invoice-Generation-Management";
-				PRODUCT_NAME = "$(TARGET_NAME)";
+				PRODUCT_NAME = Billy;
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
