@@ -18,6 +18,8 @@
 		B3FE6BC2238D8919000DE563 /* Inventory.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE6BC1238D8919000DE563 /* Inventory.swift */; };
 		B3FE6BC5238D8AA9000DE563 /* InventoryTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE6BC4238D8AA9000DE563 /* InventoryTableViewCell.swift */; };
 		B3FE6BC8238D9BCC000DE563 /* SwipeCellKit in Frameworks */ = {isa = PBXBuildFile; productRef = B3FE6BC7238D9BCC000DE563 /* SwipeCellKit */; };
+		B3FE6BCA238E32AA000DE563 /* Invoice.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE6BC9238E32AA000DE563 /* Invoice.swift */; };
+		B3FE6BCC238E337F000DE563 /* GenerateInvoiceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B3FE6BCB238E337F000DE563 /* GenerateInvoiceViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,6 +33,8 @@
 		B30CDB0E238BA754000FEB45 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		B3FE6BC1238D8919000DE563 /* Inventory.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Inventory.swift; sourceTree = "<group>"; };
 		B3FE6BC4238D8AA9000DE563 /* InventoryTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InventoryTableViewCell.swift; sourceTree = "<group>"; };
+		B3FE6BC9238E32AA000DE563 /* Invoice.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Invoice.swift; sourceTree = "<group>"; };
+		B3FE6BCB238E337F000DE563 /* GenerateInvoiceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GenerateInvoiceViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -83,6 +87,7 @@
 			isa = PBXGroup;
 			children = (
 				B30CDB04238BA750000FEB45 /* InventoryViewController.swift */,
+				B3FE6BCB238E337F000DE563 /* GenerateInvoiceViewController.swift */,
 			);
 			path = Controller;
 			sourceTree = "<group>";
@@ -91,6 +96,7 @@
 			isa = PBXGroup;
 			children = (
 				B3FE6BC1238D8919000DE563 /* Inventory.swift */,
+				B3FE6BC9238E32AA000DE563 /* Invoice.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -184,6 +190,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				B3FE6BC2238D8919000DE563 /* Inventory.swift in Sources */,
+				B3FE6BCA238E32AA000DE563 /* Invoice.swift in Sources */,
+				B3FE6BCC238E337F000DE563 /* GenerateInvoiceViewController.swift in Sources */,
 				B30CDB05238BA750000FEB45 /* InventoryViewController.swift in Sources */,
 				B3FE6BC5238D8AA9000DE563 /* InventoryTableViewCell.swift in Sources */,
 				B30CDB01238BA750000FEB45 /* AppDelegate.swift in Sources */,
