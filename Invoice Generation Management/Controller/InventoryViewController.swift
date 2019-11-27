@@ -61,13 +61,29 @@ class InventoryViewController: UIViewController, UITableViewDataSource, UITableV
         }
         
         let addAction = UIAlertAction(title: "Done", style: .default) { (addAction) in
-            let item = Inventory()
-            if let textInTextfield = itemNameTextField.text {
-                item.name = itemNameTextField.text!
-                item.qty = Int(itemQtyTextField.text!) ?? 0
-                item.price = Int(itemPriceTextField.text!) ?? 0
+            let inventoryItem = self.inventory?.filter("name LIKE [c] %@", itemNameTextField.text!)
+            if inventoryItem?.count != 0 {
+                do {
+                    try self.realm.write {
+                        inventoryItem?.first!.qty += Int(itemQtyTextField.text!)!
+                        inventoryItem?.first!.price += Int(itemPriceTextField.text!)!
+                    }
+                } catch {
+                    print("Error updating quantity")
+                }
+                
+                self.tableView.reloadData()
+                
+            } else {
+                let item = Inventory()
+                if let textInTextfield = itemNameTextField.text {
+                    item.name = itemNameTextField.text!
+                    item.qty = Int(itemQtyTextField.text!) ?? 0
+                    item.price = Int(itemPriceTextField.text!) ?? 0
+                    
+                    self.save(inventoryItem: item)
+                }
             }
-            self.save(inventoryItem: item)
         }
         
         let cancelAction = UIAlertAction(title: "Cancel", style: .cancel) { (cancelAction) in }
